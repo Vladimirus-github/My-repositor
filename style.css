@@ -147,7 +147,7 @@ body {
   width: 100%;
 }
 /* ********************** wrapper_header_main ********************** */
-.header_athlets {
+.header_main_article {
 	width: 320px;
 	box-sizing: border-box;
   margin-left: auto;
@@ -158,14 +158,15 @@ body {
   background-color: #ffffff;
 	position: relative;
 }
-
 .section_image_athlets {
   position: absolute;
   top: 30%;
   left: 25%;
 }
-
-.title_header_athlets {
+.section_image_athlets_item {
+	max-width: 300px;
+}
+.title_header_main_article {
   margin: 0;
   font-weight: 700;
   color: #c1c1c1;
@@ -226,7 +227,7 @@ body {
   background: #5e42b0;
 }
 .link_article_connection {
-  color: #5e42b0;
+  color: #c1c1c1;
 }
 .article_content_connection {
   color: #000000;
@@ -239,12 +240,12 @@ body {
   background: #5e42b0;
 }
 .link_article_collaboration {
-  color: #5e42b0;
+  color: #c1c1c1;
 }
 .article_content_collaboration {
   color: #000000;
 }
-/* *************** Стили для GROWTH *************** */
+/* *************** Стили для article_growth *************** */
 .article_conteiner_growth {
   background-color: #5e42b0;
 }
@@ -257,11 +258,20 @@ body {
 .article_content_growth {
   color: #ffffff;
 }
-/* *************** Стили для GROWTH *************** */
+/* *************** Стили для PLAYERS *************** */
 
+.section_image_players {
+  position: absolute;
+  top: 30%;
+  left: 3.2%;
+}
+.section_image_players_item {
+	max-width: 300px;
+}
 
-
-
+.article_conteiner_growth_players {
+  background-color: #090c35;
+}
 
 
 
