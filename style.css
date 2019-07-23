@@ -144,12 +144,9 @@ body {
 
 /* **************************** MAIN **************************** */
 .main {
-  width: 100vw;
+  width: 100%;
 }
 /* ********************** wrapper_header_main ********************** */
-.wrapper_header_main {
-	background-color: aqua;
-}
 .header_athlets {
 	width: 320px;
 	box-sizing: border-box;
@@ -238,7 +235,6 @@ body {
 .article_conteiner_collaboration {
   background-color: #f5f4f9;
 }
-
 .number_block_collaboration::after {
   background: #5e42b0;
 }
@@ -249,7 +245,7 @@ body {
   color: #000000;
 }
 /* *************** Стили для GROWTH *************** */
-.article_athlets_growth {
+.article_conteiner_growth {
   background-color: #5e42b0;
 }
 .number_block_growth::after {
@@ -261,7 +257,7 @@ body {
 .article_content_growth {
   color: #ffffff;
 }
-
+/* *************** Стили для GROWTH *************** */
 
 
 
