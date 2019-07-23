@@ -1,0 +1,184 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+/* html {
+  font-size: 10px;
+} */
+body {
+  margin: 0;
+  font-family: OpenSans, Arial, sans-serif;
+}
+
+/* **************************** HEADER **************************** */
+.header {
+  background-color: #2828cc;    /* Для проверки*/
+  background-image: url(img/football_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #161b38;
+	opacity: 0.9;
+}
+
+.header_conteiner {
+	box-sizing: border-box;
+	position: relative;
+  z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ************************ ALL_Links ************************ */
+.link {
+  text-decoration: none;
+}
+
+/* ************************ HEADER_logo ************************ */
+.logo {
+	padding-top: 33px;
+	width: 137px;
+}
+
+.header_logo_text {
+  fill: #ffffff;
+}
+
+/* ************************ HEADER_title ************************ */
+.title_header {
+	min-width: 320px;
+	margin-top: 122px;
+	color: #ffffff;
+	text-transform: uppercase;	
+}
+
+.title_header_description {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.header-text {
+	margin: 0;
+	font-size: 28px;
+}
+
+.header_description_1 {
+	margin-left: 19px;
+	letter-spacing: 1px;
+}
+.header_description_2 {
+	margin-top: 18px;
+	margin-left: 63px;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+
+/* ************************ HEADER_Buttons ************************ */
+.button_wrapper {
+	min-width: 320px;
+	margin-top: 88px;
+	margin-bottom:84px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button {
+	width: calc(100% - 40px);
+	height: 35px;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 50px;		/* Вот тут вопрос, в каких единицах задавать? */
+	background-color: #5e42b0;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper_button_content {
+	display: flex;
+	align-items: center;
+	width: calc(100% - 55%);
+}
+
+.button_download {
+	width: calc(100% - 20%);
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-family: OpenSans;
+	font-size: 8px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.button_download_icon { 
+	width: 25px;
+	fill: #ffffff;
+}
+
+.download_button-label_1 {
+	font-weight: 400;
+}
+
+.download_button-label_2 {
+	font-weight: 700;
+}
+
+.button_google_play {
+	margin-top: 14px;
+}
+/* ************************ Конец HEADER ************************ */
+
+/* **************************** MAIN **************************** */
+.main {
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header_section_article {
+	padding-top: 24px;
+	padding-left: 20px;
+	padding-bottom: 225px;
+}
+.title_section_article {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: OpenSans;
+	font-size: 50px;
+	font-weight: 700;
+	color: #e7e7e7;
+}
+
+.main_article {
+	background-color: #fafafa;
+}
+
+
+
