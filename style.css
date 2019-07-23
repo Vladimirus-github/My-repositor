@@ -27,7 +27,6 @@ body {
   background-size: cover;
   position: relative;
 }
-
 .header::before {
 	content: "";
 	position: absolute;
@@ -38,11 +37,10 @@ body {
 	background-color: #161b38;
 	opacity: 0.9;
 }
-
 .header_conteiner {
 	box-sizing: border-box;
 	position: relative;
-  z-index: 1;
+    z-index: 1;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -53,17 +51,14 @@ body {
 .link {
   text-decoration: none;
 }
-
 /* ************************ HEADER_logo ************************ */
 .logo {
 	padding-top: 33px;
 	width: 137px;
 }
-
 .header_logo_text {
   fill: #ffffff;
 }
-
 /* ************************ HEADER_title ************************ */
 .title_header {
 	min-width: 320px;
@@ -94,7 +89,7 @@ body {
 	letter-spacing: 2px;
 }
 
-/* ************************ HEADER_Buttons ************************ */
+/* ************************ Buttons в HEADER ************************ */
 .button_wrapper {
 	min-width: 320px;
 	margin-top: 88px;
@@ -104,7 +99,6 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
-
 .button {
 	width: calc(100% - 40px);
 	height: 35px;
@@ -117,13 +111,11 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
 .wrapper_button_content {
 	display: flex;
 	align-items: center;
 	width: calc(100% - 55%);
 }
-
 .button_download {
 	width: calc(100% - 20%);
 	margin-left: 10px;
@@ -135,20 +127,16 @@ body {
 	color: #ffffff;
 	text-transform: uppercase;
 }
-
 .button_download_icon { 
 	width: 25px;
 	fill: #ffffff;
 }
-
 .download_button-label_1 {
 	font-weight: 400;
 }
-
 .download_button-label_2 {
 	font-weight: 700;
 }
-
 .button_google_play {
 	margin-top: 14px;
 }
@@ -156,29 +144,123 @@ body {
 
 /* **************************** MAIN **************************** */
 .main {
-	width: 320px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header_section_article {
-	padding-top: 24px;
-	padding-left: 20px;
-	padding-bottom: 225px;
+.section_athlets {
+  max-width: 100%;
+  position: relative;
 }
-.title_section_article {
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
-	font-family: OpenSans;
-	font-size: 50px;
-	font-weight: 700;
-	color: #e7e7e7;
+.section_image_athlets {
+  position: absolute;
+  top: 90px;
+  left: 64px;
 }
 
-.main_article {
-	background-color: #fafafa;
+.header_athlets {
+  padding: 25px 20px 224px;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
+.title_header_athlets {
+  margin: 0;
+  font-weight: 700;
+  color: #c1c1c1;
+}
+/* *************** Общие стили для MAIN ARTICLE *************** */
+.wrapper_article {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.wrapper_title_block {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+.number_block {
+  font-size: 14px;
+  font-weight: 700;
+}
+.number_block::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 4px;
+  border-radius: 1.5px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.title_article_block {
+  margin: 0;
+  font-size: 23px;
+  margin-left: 10px;
+}
+.link_article {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.article_description {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.article_content {
+  margin: 0;
+  font-size: 15px;
+}
+/* *************** Стили для connection *************** */
+.article_athlets_connection {
+  background-color: #fafafa;
+}
+.number_block_connection::after {
+  background: #5e42b0;
+}
+.link_article_connection {
+  color: #5e42b0;
+}
+.article_content_connection {
+  color: #000000;
+}
+/* *************** Стили для COLLABORATION *************** */
+.article_athlets_collaboration {
+  background-color: #f5f4f9;
+}
+.number_block_collaboration::after {
+  background: #5e42b0;
+}
+.link_article_collaboration {
+  color: #5e42b0;
+}
+.article_content_collaboration {
+  color: #000000;
+}
+/* *************** Стили для GROWTH *************** */
+.article_athlets_growth {
+  background-color: #5e42b0;
+}
+.number_block_growth::after {
+    background: #ffffff;
+}
+.link_article_growth {
+  color: #c1c1c1;
+}
+.article_content_growth {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
