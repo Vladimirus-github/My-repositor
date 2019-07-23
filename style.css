@@ -144,40 +144,51 @@ body {
 
 /* **************************** MAIN **************************** */
 .main {
-  width: 320px;
+  width: 100vw;
+}
+/* ********************** wrapper_header_main ********************** */
+.wrapper_header_main {
+	background-color: aqua;
+}
+.header_athlets {
+	width: 320px;
+	box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-}
-
-.section_athlets {
-  max-width: 100%;
-  position: relative;
-}
-.section_image_athlets {
-  position: absolute;
-  top: 90px;
-  left: 64px;
-}
-
-.header_athlets {
   padding: 25px 20px 224px;
   font-size: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
+	position: relative;
 }
+
+.section_image_athlets {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
 .title_header_athlets {
   margin: 0;
   font-weight: 700;
   color: #c1c1c1;
 }
 /* *************** Общие стили для MAIN ARTICLE *************** */
-.wrapper_article {
-  margin-left: 20px;
-  margin-right: 20px;
+.wrapper_article_conteiner {
+  width: 320px;
+	box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+	background-color: inherit;
+}
+.main_article {
+	width: calc(100% - 40px);
+	margin-left: auto;
+  margin-right: auto;
 }
 .wrapper_title_block {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
   padding-top: 80px;
 }
 .number_block {
@@ -210,9 +221,9 @@ body {
   margin: 0;
   font-size: 15px;
 }
-/* *************** Стили для connection *************** */
-.article_athlets_connection {
-  background-color: #fafafa;
+/* *************** Стили для article_connection *************** */
+.article_conteiner_connection {
+	background-color: #fafafa;
 }
 .number_block_connection::after {
   background: #5e42b0;
@@ -223,10 +234,11 @@ body {
 .article_content_connection {
   color: #000000;
 }
-/* *************** Стили для COLLABORATION *************** */
-.article_athlets_collaboration {
+/* *************** Стили для article_collaboration *************** */
+.article_conteiner_collaboration {
   background-color: #f5f4f9;
 }
+
 .number_block_collaboration::after {
   background: #5e42b0;
 }
