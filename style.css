@@ -28,14 +28,14 @@ body {
   position: relative;
 }
 .header::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #161b38;
-	opacity: 0.9;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #161b38;
+  opacity: 0.9;
 }
 .header_conteiner {
 	box-sizing: border-box;
@@ -53,16 +53,17 @@ body {
 }
 /* ************************ HEADER_logo ************************ */
 .logo {
-	padding-top: 33px;
-	width: 137px;
+  padding-top: 33px;
+  padding-bottom: 10px;
+  width: 137px;
 }
-.header_logo_text {
+.logo_text {
   fill: #ffffff;
 }
 /* ************************ HEADER_title ************************ */
 .title_header {
 	min-width: 320px;
-	margin-top: 122px;
+	margin-top: 112px;
 	color: #ffffff;
 	text-transform: uppercase;	
 }
@@ -339,11 +340,80 @@ body {
   content: "03";
 }
 
-
-
-
-
-
+/* **************************** FOOTER **************************** */
+.footer {
+  background-color: #2828cc;
+  background-image: url(img/game_767.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #161b38;
+  opacity: 0.9;
+}
+.footer_conteiner {
+  /*background-color: aqua;*/
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* *************** Стили для BOTTON TO HOME *************** */
+.button_home {
+  width: 75px;
+  height: 75px;
+  margin-top: 100px;
+  border: none;
+  border-radius: 15px;
+  background-color: #5e42b0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.logo_button_home {
+  width: 85%;
+  fill: #ffffff;
+}
+/* *************** Стили для TITLE FOOTER *************** */
+.warapper_title_footer {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.title_footer {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.title_footer_text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9b8ec1;
+}
+/* *************** Стили для BOTTONS DOWNLOAD *************** */
+.button_wrapper_footer {
+  margin-top: 77px;
+  margin-bottom: 82px;
+}
+/* *************** Стили для LOGO FOOTER *************** */
+.logo_footer {
+  padding-top: 0;
+}
 
 
 
