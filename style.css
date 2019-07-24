@@ -148,23 +148,24 @@ body {
 }
 /* ********************** wrapper_header_main ********************** */
 .header_main_article {
-	width: 320px;
-	box-sizing: border-box;
+  width: 320px;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding: 25px 20px 224px;
   font-size: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
-	position: relative;
+  position: relative;
 }
 .section_image_athlets {
   position: absolute;
+  transform: translateX(-50%);
   top: 30%;
-  left: 25%;
+  left: 50%;
 }
 .section_image_athlets_item {
-	max-width: 300px;
+  max-width: 300px;
 }
 .title_header_main_article {
   margin: 0;
@@ -174,21 +175,22 @@ body {
 /* *************** Общие стили для MAIN ARTICLE *************** */
 .wrapper_article_conteiner {
   width: 320px;
-	box-sizing: border-box;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-	background-color: inherit;
+  background-color: inherit;
 }
 .main_article {
-	width: calc(100% - 40px);
-	margin-left: auto;
+  width: calc(100% - 40px);
+  margin-left: auto;
   margin-right: auto;
 }
 .wrapper_title_block {
-	display: flex;
-	align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
   padding-top: 80px;
 }
+/* *************** Общие стили для article *************** */
 .number_block {
   font-size: 14px;
   font-weight: 700;
@@ -212,8 +214,7 @@ body {
   font-weight: 700;
 }
 .article_description {
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding: 25px 22px 50px 0;
 }
 .article_content {
   margin: 0;
@@ -259,11 +260,15 @@ body {
   color: #ffffff;
 }
 /* *************** Стили для PLAYERS *************** */
-
+.number_block_growth_players {
+  color: #5e42b0;
+}
 .section_image_players {
   position: absolute;
   top: 30%;
-  left: 3.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px;
 }
 .section_image_players_item {
 	max-width: 300px;
@@ -273,6 +278,66 @@ body {
   background-color: #090c35;
 }
 
+/* **************************** ASIDE **************************** */
+
+.article_aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section_image_aside {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.aside_post {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding: 34px 0 75px;
+}
+.aside_post::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  left: 20px;
+  top: -58px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold; 
+  color: #ffffff;
+  background-color: #5e42b0;
+}
+.title_aside_post {
+  margin: 0;
+  padding: 0 0 0 20px;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-weight: 700;
+  font-size: 28px;
+}
+.aside_post_description {
+  margin: 0;
+  padding: 24px 35px 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* *************** Стили для BE ACTIVE *************** */
+.aside_post_be_active::before {
+  content: "01";
+}
+/* *************** Стили для FIND CONTACT *************** */
+.aside_post_find_contact::before {
+  content: "02";
+}
+/* *************** Стили для WORK IT *************** */
+.aside_post_work::before {
+  content: "03";
+}
 
 
 
