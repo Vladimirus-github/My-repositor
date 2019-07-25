@@ -55,39 +55,35 @@ body {
 .logo {
   padding-top: 33px;
   padding-bottom: 10px;
-  width: 137px;
+  width: 43%;
+  min-width: 137px;
+  max-width: 200px;
 }
 .logo_text {
   fill: #ffffff;
 }
-/* ************************ HEADER_title ************************ */
+/* ************************ title HEADER ************************ */
 .title_header {
-	min-width: 320px;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 	margin-top: 112px;
-	color: #ffffff;
-	text-transform: uppercase;	
 }
-
-.title_header_description {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
+.title_header_text {
+  min-width: 280px;
+  max-width: 595px;
+  display: block;
+  margin: 0;
+  font-size: 28px;
+  color: #ffffff;
+	text-transform: uppercase;
+  
 }
-
-.header-text {
-	margin: 0;
-	font-size: 28px;
-}
-
-.header_description_1 {
-	margin-left: 19px;
-	letter-spacing: 1px;
-}
-.header_description_2 {
-	margin-top: 18px;
-	margin-left: 63px;
-	line-height: 30px;
-	letter-spacing: 2px;
+.header_text_wrap {
+  display: block;
+  margin-left: 45px;
+  margin-top: 30px;
+	white-space: nowrap;
 }
 
 /* ************************ Buttons в HEADER ************************ */
@@ -161,9 +157,9 @@ body {
 }
 .section_image_athlets {
   position: absolute;
-  transform: translateX(-50%);
   top: 30%;
   left: 50%;
+	transform: translateX(-50%);
 }
 .section_image_athlets_item {
   max-width: 300px;
@@ -269,7 +265,6 @@ body {
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 300px;
 }
 .section_image_players_item {
 	max-width: 300px;
