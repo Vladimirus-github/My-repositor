@@ -4,21 +4,25 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: OpenSans;
   src: url(fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
-/* html {
+
+html {
   font-size: 10px;
-} */
+}
+
 body {
   margin: 0;
+	padding: 0;
   font-family: OpenSans, Arial, sans-serif;
 }
 
-/* **************************** HEADER **************************** */
+/* *************** HEADER *************** */
 .header {
   background-color: #2828cc;    /* Для проверки*/
   background-image: url(img/football_1920.jpg);
@@ -27,6 +31,7 @@ body {
   background-size: cover;
   position: relative;
 }
+
 .header::before {
   content: "";
   position: absolute;
@@ -37,48 +42,52 @@ body {
   background-color: #161b38;
   opacity: 0.9;
 }
+
 .header_conteiner {
-	box-sizing: border-box;
-	position: relative;
-    z-index: 1;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* ************************ ALL_Links ************************ */
+/* ******************* All Links Description ********************* */
 .link {
   text-decoration: none;
 }
-/* ************************ HEADER_logo ************************ */
+
+/* ******************* Header Logo Description ******************* */
 .logo {
   padding-top: 33px;
   padding-bottom: 10px;
   width: 43%;
   min-width: 137px;
-  max-width: 200px;
+  max-width: 195px;
 }
+
 .logo_text {
   fill: #ffffff;
 }
-/* ************************ title HEADER ************************ */
+
+/* ******************* Title header Description ****************** */
 .title_header {
   min-width: 280px;
   margin-left: auto;
   margin-right: auto;
 	margin-top: 112px;
 }
+
 .title_header_text {
-  min-width: 280px;
-  max-width: 595px;
+  max-width: 470px;
   display: block;
   margin: 0;
   font-size: 28px;
   color: #ffffff;
 	text-transform: uppercase;
-  
 }
+
 .header_text_wrap {
   display: block;
   margin-left: 45px;
@@ -86,112 +95,123 @@ body {
 	white-space: nowrap;
 }
 
-/* ************************ Buttons в HEADER ************************ */
-.button_wrapper {
-	min-width: 320px;
-	margin-top: 88px;
-	margin-bottom:84px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
+/* ******************* Download Liks Description ***************** */
+.download_link_wrapper {
+  width: 87.5%;
+  min-width: 280px;
+  max-width: 370px;
+  height: 35px;
+  margin-top: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e42b0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
 }
-.button {
-	width: calc(100% - 40px);
-	height: 35px;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
-	border-radius: 50px;		/* Вот тут вопрос, в каких единицах задавать? */
-	background-color: #5e42b0;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
+.download_link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.wrapper_button_content {
-	display: flex;
-	align-items: center;
-	width: calc(100% - 55%);
+
+.download_icon {
+  width: 25px;
+  fill: #ffffff;
 }
-.button_download {
-	width: calc(100% - 20%);
-	margin-left: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	font-family: OpenSans;
-	font-size: 8px;
-	color: #ffffff;
-	text-transform: uppercase;
+
+.download_link_label {
+  margin-left: 10px;
+  font-family: OpenSans;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
-.button_download_icon { 
-	width: 25px;
-	fill: #ffffff;
+
+.link_label_2 {
+  margin: 0;
+  font-weight: 700;
 }
-.download_button-label_1 {
-	font-weight: 400;
-}
-.download_button-label_2 {
-	font-weight: 700;
-}
-.button_google_play {
-	margin-top: 14px;
+
+.link_google_play {
+  margin-top: 14px;
+  margin-bottom:84px;
 }
 /* ************************ Конец HEADER ************************ */
 
-/* **************************** MAIN **************************** */
+/* *************** MAIN *************** */
 .main {
   width: 100%;
 }
-/* ********************** wrapper_header_main ********************** */
-.header_main_article {
-  width: 320px;
-  box-sizing: border-box;
+
+/* *** ОБЩИЕ стили для оформления секций list_article *** */
+.list_article {
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px 20px 224px;
-  font-size: 30px;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  position: relative;
+  list-style: none;
 }
-.section_image_athlets {
+
+/* Описание стилей секции заголовка header_article */
+.header_article {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 224px;
+}
+
+.title_header_main {
+  margin: 0;
+  width: 87.5%;
+  min-width: 280px;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c1c1c1;         /* Цвет ЗАГОЛОВКА  title_header_main */
+  text-transform: uppercase;
+}
+
+.section_image {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 22%;
+  left: 48%;
 	transform: translateX(-50%);
 }
-.section_image_athlets_item {
-  max-width: 300px;
+
+.section_image_item {
+  max-width: 270px;
 }
-.title_header_main_article {
-  margin: 0;
-  font-weight: 700;
-  color: #c1c1c1;
-}
-/* *************** Общие стили для MAIN ARTICLE *************** */
-.wrapper_article_conteiner {
-  width: 320px;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: inherit;
-}
+
+/* Описания стилей секции статей main_article */
 .main_article {
-  width: calc(100% - 40px);
+  width: 87.5%;
+  min-width: 280px;
+  max-width: 370px;
   margin-left: auto;
   margin-right: auto;
-}
-.wrapper_title_block {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding-top: 80px;
 }
-/* *************** Общие стили для article *************** */
+
 .number_block {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
+  color: #000000; /* цвет номера секций article */
 }
+
 .number_block::after {
   content: "";
   display: block;
@@ -201,149 +221,178 @@ body {
   margin-top: 0;
   padding-top: 0;
 }
-.title_article_block {
+
+.title_article {
   margin: 0;
-  font-size: 23px;
-  margin-left: 10px;
-}
-.link_article {
+  font-size: 2.3rem;
+  margin-left: 1rem;
   text-transform: uppercase;
-  font-weight: 700;
+  color: #c1c1c1;
 }
+
 .article_description {
-  padding: 25px 22px 50px 0;
-}
-.article_content {
   margin: 0;
-  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+	font
 }
-/* *************** Стили для article_connection *************** */
-.article_conteiner_connection {
-	background-color: #fafafa;
+
+                          /* Стили оформления секции ATHLETS */
+/* Индивидуальные стили оформления секции CONNECTION ATHLETS */
+/* цвет фона секции connection */
+.list_article_connection {
+  width: 100%;
+  background-color: #fafafa;
 }
+
+/* цвет подчеркивающей линии секции connection */
 .number_block_connection::after {
   background: #5e42b0;
 }
-.link_article_connection {
-  color: #c1c1c1;
-}
-.article_content_connection {
-  color: #000000;
-}
-/* *************** Стили для article_collaboration *************** */
-.article_conteiner_collaboration {
+
+/* Индивидуальные стили оформления секции COLLABORATION ATHLETS */
+/* цвет фона секции collaboration */
+.list_article_collaboration {
+  width: 100%;
   background-color: #f5f4f9;
 }
+
+/* цвет подчеркивающей линии секции collaboration */
 .number_block_collaboration::after {
   background: #5e42b0;
 }
-.link_article_collaboration {
-  color: #c1c1c1;
-}
-.article_content_collaboration {
-  color: #000000;
-}
-/* *************** Стили для article_growth *************** */
-.article_conteiner_growth {
+
+/* Индивидуальные стили оформления секции GROWTH ATHLETS */
+/* цвет фона секции growth */
+.list_article_growth_athlets {
+  width: 100%;
   background-color: #5e42b0;
 }
-.number_block_growth::after {
-    background: #ffffff;
-}
-.link_article_growth {
-  color: #c1c1c1;
-}
-.article_content_growth {
-  color: #ffffff;
-}
-/* *************** Стили для PLAYERS *************** */
-.number_block_growth_players {
-  color: #5e42b0;
-}
-.section_image_players {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.section_image_players_item {
-	max-width: 300px;
+
+/* цвет подчеркивающей линии секции growth */
+.number_block_growth_athlets::after {
+  background: #ffffff;
 }
 
-.article_conteiner_growth_players {
+/* цвет текста секции growth */
+.article_description_growth {
+  color: #ffffff;
+}
+
+                          /* Стили оформления секции PLAYERS */
+/* Индивидуальные стили оформления секции CONNECTION PLAYERS */
+/* цвет фона секции connection */
+.list_article_connection_players {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+/* цвет подчеркивающей линии секции connection */
+.number_block_connection::after {
+  background: #5e42b0;
+}
+
+/* Индивидуальные стили оформления секции COLLABORATION PLAYERS */
+/* цвет фона секции collaboration */
+.list_article_collaboration_players {
+  width: 100%;
+  background-color: #f5f4f9;
+}
+
+/* цвет подчеркивающей линии секции collaboration */
+.number_block_collaboration::after {
+  background: #5e42b0;
+}
+
+/* Индивидуальные стили оформления секции GROWTH PLAYERS */
+/* цвет фона секции growth */
+.list_article_growth_players {
+  width: 100%;
   background-color: #090c35;
 }
 
-/* **************************** ASIDE **************************** */
-
-.article_aside {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+/* цвет номера секции growth */
+.number_block_growth {
+  color: #5e42b0;
 }
-.section_image_aside {
-  max-width: 100%;
+
+/* цвет подчеркивающей линии секции growth */
+.number_block_growth::after {
+  background: #ffffff;
+}
+
+/* *************** ARTICLES *************** */
+.active_image {
+  width: 100%;
+  max-width: 640px;
   display: block;
   margin: 0 auto;
 }
-.aside_post {
-  width: 320px;
-  margin: 0 auto;
+
+.article_post {
+  width: 100%;
+  min-width: 280px;
+  max-width: 450px;
+  margin: 0;
+  margin-left: auto;
+	margin-right: auto;
   position: relative;
-  padding: 34px 0 75px;
+  padding: 34px 0 60px;
 }
-.aside_post::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  left: 20px;
-  top: -58px;
-  position: absolute;
+
+.number_post {
+  background-color: #5e42b0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold; 
-  color: #ffffff;
-  background-color: #5e42b0;
+  color: #f5f6f7;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 20px;
+  top: -58px;
 }
-.title_aside_post {
+
+.number_post::after {
+  content: "";
+  width: 14px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 4px;
+  color: inherit;
+}
+
+.title_article {
   margin: 0;
-  padding: 0 0 0 20px;
+  padding-left: 20px;
   text-transform: uppercase;
   color: #e7e7e7;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
-.aside_post_description {
+
+.section_article_description {
   margin: 0;
   padding: 24px 35px 0 20px;
   font-weight: 400;
   font-size: 16px;
 }
 
-/* *************** Стили для BE ACTIVE *************** */
-.aside_post_be_active::before {
-  content: "01";
-}
-/* *************** Стили для FIND CONTACT *************** */
-.aside_post_find_contact::before {
-  content: "02";
-}
-/* *************** Стили для WORK IT *************** */
-.aside_post_work::before {
-  content: "03";
-}
-
-/* **************************** FOOTER **************************** */
+/* *************** FOOTER *************** */
 .footer {
-  background-color: #2828cc;
+  background-color: #2828cc;    /* Для проверки*/
   background-image: url(img/game_767.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
 }
+
 .footer::before {
   content: "";
   position: absolute;
@@ -354,61 +403,129 @@ body {
   background-color: #161b38;
   opacity: 0.9;
 }
+
 .footer_conteiner {
-  /*background-color: aqua;*/
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* *************** Стили для BOTTON TO HOME *************** */
-.button_home {
+
+
+.link_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link_home_page {
+  margin: 0;
+  padding: 0;
   width: 75px;
   height: 75px;
   margin-top: 100px;
   border: none;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   background-color: #5e42b0;
   box-sizing: border-box;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .logo_button_home {
   width: 85%;
   fill: #ffffff;
 }
-/* *************** Стили для TITLE FOOTER *************** */
-.warapper_title_footer {
-  max-width: 320px;
+
+/* ******************* TITLE FOOTER ****************** */
+.title_footer {
+  margin: 0;
+  width: 93.49%;
+  min-width: 280px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
   margin-top: 60px;
-}
-.title_footer {
-  margin: 0;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #ffffff;
-  box-sizing: border-box;
 }
+
 .title_footer_text {
   margin: 0;
+  text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #9b8ec1;
 }
-/* *************** Стили для BOTTONS DOWNLOAD *************** */
-.button_wrapper_footer {
-  margin-top: 77px;
-  margin-bottom: 82px;
+
+/* ******************* Download Liks Description ***************** */
+.download_link_wrapper {
+  width: 87.5%;
+  min-width: 280px;
+  max-width: 370px;
+  height: 3.5rem;
+  margin-top: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e42b0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
 }
-/* *************** Стили для LOGO FOOTER *************** */
+
+.download_link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.download_icon {
+  width: 25px;
+  fill: #ffffff;
+}
+
+.download_link_label {
+  margin-left: 1rem;
+  font-family: OpenSans;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.link_label_2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.link_google_play {
+  margin-top: 14px;
+  margin-bottom:84px;
+}
+
+/* ******************* LOGO FOOTER ******************* */
 .logo_footer {
-  padding-top: 0;
+  width: 43%;
+  min-width: 137px;
+  max-width: 190px;
+  margin-bottom: 10px;
 }
 
-
-
+.logo_text {
+  fill: #ffffff;
+}
+/* ************************ Конец FOOTER ************************ */
