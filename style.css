@@ -255,7 +255,7 @@ body {
   background: #efefef;
 }
 /* цвет текста секции growth */
-.article_description_players {
+.article_description_growth_players {
   color: #ffffff;
 }
 
@@ -483,6 +483,7 @@ body {
 }
 
 @media (min-width: 961px) and (max-width: 1365px) {
+	
   .header {
 	  background-image: url(img/football_1280.jpg);
    }
@@ -521,6 +522,8 @@ body {
 		margin-left: 27px;
 		font-size: 14px;
 	}
+	
+/*	MAIN */
 	
 	.article, .number_article {
 		padding: 0;
@@ -607,6 +610,36 @@ body {
 		padding-right: 370px;
 	}
 	
+/*	ASIDE  */
+	
+	.section_aside_post {
+		padding: 91px 32px 96px;
+	}
+	.number_post {
+		width: 116px;
+		height: 116px;
+		font-size: 24px;
+		left: 32px;
+		top: -90px;
+	}
+	.number_post::after {
+		width: 25px;
+		height: 5px;
+		background-color: #8f7bc8;
+		border-radius: 5px;
+		margin-top: 5px;
+
+	}
+	.section_title_article {
+		margin-left: 0;
+		font-size: 80px;
+	}
+	.section_article_description {
+		margin: 0;
+		padding-top: 38px;
+		font-size: 24px;
+	}
+	
 }
 
 @media (min-width: 1366px) {
@@ -666,6 +699,192 @@ body {
 	
 /*	MAIN */
 	
+	.section_main {
+		max-width: 1920px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.article, .number_article {
+		padding: 0;
+		margin: 0;
+	}
+	.article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+}
+	.number_article {
+		font-size: 18px;
+	}
+	.number_article::after {
+		width: 20px;
+  	height: 5px;
+		border-radius: 2.5px;
+	}
+	.title_article {
+		font-size: 36px;
+	}
+	.article_description {
+		padding: 32px 0 51px;
+		font-size: 20px;
+	}
+	
+	
+	/* Индивидуальные стили оформления секции ATHLETS */
+/* Картинка section ATHLETS */	
+.section_image_athlets {
+	position: absolute;
+  top: 5%;
+  left: 30%;
+  transform: translateX(-50%);
+}
+	.title_athlets {
+		margin-left: 54%;
+		padding: 117px 0 0 0;
+		font-size: 80px;
+	}
+	.article_connection_athlets {
+		padding-top: 62px;
+		padding-left: 54%;
+		padding-right: 33px;
+	}
+	.article_collaboration_athlets {
+		padding-top: 62px;
+		padding-left: 54%;
+		padding-right: 33px;
+	}
+	.article_growth_athlets {
+		padding-top: 62px;
+		padding-left: 54%;
+		padding-right: 33px;
+	}
+	
+		
+		/* Индивидуальные стили оформления секции PLAYERS */
+/* Картинка section PLAYERS */
+	
+	.section_image_item_players, .section_image_players {
+		position: absolute;
+		transform: translateX(0);
+		top: 0;
+		right: 5%;
+	}
+	.title_players {
+		padding: 86px 32px 0;
+		font-size: 80px;
+	}
+	.article_connection_players {
+		padding-top: 62px;
+		padding-left: 32px;
+		padding-right: 370px;
+	}
+	.article_collaboration_players {
+		padding-top: 62px;
+		padding-left: 32px;
+		padding-right: 370px;
+	}
+	.article_growth_players {
+		padding-top: 62px;
+		padding-left: 32px;
+		padding-right: 370px;
+	}
+	.article_description_connection_players {
+		display: block;
+		width: 100%;
+	}
+	
+	
+/* ASIDE */
+	/* Start Aside_section */
+
+	.section_aside {
+		display: flex;
+		max-width: 1920px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.aside_image {
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.section_contact {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	
+	.section_aside_post {
+		width: 50%;
+		position: relative;
+		padding: 12% 0 60px 122px;
+		box-sizing: border-box;
+	}
+	.number_post {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #5e42b0;
+		width: 168px;
+		height: 168px;
+		font-size: 24px;
+		font-weight: 700; 
+		color: #f5f6f7;
+		position: absolute;
+		transform: translateX(-50%);
+		left: 0;
+		top: 30%;
+	}
+	.number_post_contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #5e42b0;
+		width: 168px;
+		height: 168px;
+		font-size: 24px;
+		font-weight: 700; 
+		color: #f5f6f7;
+		position: absolute;
+		transform: translateX(-50%);
+		left: 100%;
+		top: 30%;
+	}
+	
+	.number_post::after {
+		content: "";
+		width: 24px;
+		height: 5px;
+		background-color: #fff;
+		border-radius: 3px;
+		margin-top: 5px;
+		color: inherit;
+	}
+	.section_title_article {
+		margin: 0;
+		text-transform: uppercase;
+		color: #e7e7e7;
+		font-weight: 700;
+		font-size: 80px;
+	}
+	.section_title_article_contact {
+		padding-right: 80px;
+	}
+	
+	.section_aside_post_contact {
+		padding-left: 187px;
+	}
+	
+	.section_article_description_contact {
+		padding-right: 170px;
+	}
+	
+	.section_article_description {
+		margin: 0;
+		padding-top: 24px;
+		font-weight: 400;
+		font-size: 24px;
+	}
 	
 	
 }
