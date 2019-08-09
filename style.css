@@ -47,7 +47,7 @@ body {
 .logo {
   padding-top: 33px;
   display: block;
-  width: 140px;
+  width: 137px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,24 +57,24 @@ body {
 
 .title_header {
 	margin: 0;
-	margin-top: 137px;
+	margin-top: 120px;
 }
 .title_text {
 	display: block;
 	margin-left: 21px;
-	margin-right: 42px;
+	margin-right: 40px;
 	font-size: 28px;
 	font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
 }
 .title_text_2 { 
-	margin-top: 30px; 
+	margin-top: 15px; 
 	margin-left: 65px;
 }
 
 .buttons {
-  padding: 90px 20px 84px;
+  padding: 75px 20px 84px;
   
 }
 .link_buttons {
@@ -121,7 +121,7 @@ body {
 }
 .title_section {
   margin: 0;
-	padding: 25px 20px 224px;
+	padding: 10px 21px 224px;
   font-size: 50px;
   font-weight: 700;
   color: #c1c1c1;         /* Цвет ЗАГОЛОВКА title_section */
@@ -167,7 +167,7 @@ body {
 	display: block;
 	width: 100%;
   margin: 0;
-  padding: 25px 20px 50px;
+  padding: 17px 20px 50px;
   font-size: 15px;
 }
   
@@ -175,49 +175,60 @@ body {
 /* Картинка stction ATHLETS */
 .section_image_athlets {
 	position: absolute;
-  top: 9%;
-  left: 50%;
+  top: 7.9%;
+  left: 52%;
   transform: translateX(-50%);
 }
 									/* CONNECTION */
 /* цвет фона секции connection */
 .article_connection_athlets {
-  background-color: #fafafa;
+	background-color: #fafafa;
 }
 /* цвет подчеркивающей линии секции connection */
 .number_article_connection_athlets::after {
   background: #5e42b0;
 }
-
 									/* COLLABORATION */
 /* цвет фона секции collaboration */
 .article_collaboration_athlets {
   background-color: #f5f4f9;
+	padding-top: 49px;
 }
 /* цвет подчеркивающей линии секции collaboration */
 .number_article_collaboration_athlets::after {
   background: #5e42b0;
 }
-
+.article_description_collaboration_athlets {
+	padding-top: 20px;
+	padding-bottom: 58px;
+}
 									/* GROWTH */
-/* цвет фона секции connection */
+/* цвет фона секции growth */
 .article_growth_athlets {
   background-color: #5e42b0;
+	padding-top: 52px;
 }
-/* цвет подчеркивающей линии секции connection */
+/* цвет подчеркивающей линии секции growth */
 .number_growth_athlets::after {
   background: #ffffff;
 }
 /* цвет текста секции growth */
 .article_description_growth {
   color: #ffffff;
+	padding-bottom: 68px;
+	line-height: 25px;
 }
 
 /* Индивидуальные стили оформления секции PLAYERS */
+
+.title_players {
+	padding-top: 5px;
+	padding-left: 16px;
+}
 /* Картинка stction PLAYERS */
 .section_image_players {
 	position: absolute;
-  top: 9%;
+  top: 8.3%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -230,21 +241,30 @@ body {
 .number_article_connection_players::after {
   background: #5e42b0;
 }
+.article_description_connection_players {
+	padding-bottom: 68px;
+}
 
 									/* COLLABORATION */
 /* цвет фона секции collaboration */
 .article_collaboration_players {
   background-color: #f5f4f9;
+	padding-top: 51px;
 }
 /* цвет подчеркивающей линии секции collaboration */
 .number_article_collaboration_players::after {
   background: #5e42b0;
 }
+.article_description_collaboration_players {
+	padding-bottom: 52px;
+}
+
 
 									/* GROWTH */
 /* цвет фона секции growth */
 .article_growth_players {
   background-color: #090c35;
+	padding-top: 50px;
 }
 /* цвет номера секции growth */
 .number_growth_players {
@@ -275,7 +295,13 @@ body {
 	margin: 0;
 	padding: 0;
 	position: relative;
-  padding: 34px 20px 60px;
+  padding: 18px 17px 94px;
+}
+.section_aside_post_contact {
+	padding-bottom: 78px;
+}
+.section_aside_post_work {
+	padding-bottom: 63px;
 }
 .number_post {
 	display: flex;
@@ -290,7 +316,7 @@ body {
   color: #f5f6f7;
   position: absolute;
   left: 20px;
-  top: -58px;
+  top: -63px;
 }
 .number_post::after {
   content: "";
@@ -298,20 +324,20 @@ body {
   height: 4px;
   background-color: #fff;
   border-radius: 4px;
-  margin-top: 4px;
+  margin-top: 3px;
   color: inherit;
 }
 .section_title_article {
   margin: 0;
-  margin-left: 20px;
   text-transform: uppercase;
   color: #e7e7e7;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
 }
 .section_article_description {
   margin: 0;
-  padding-top: 24px;
+  padding-top: 10px;
+	padding-left: 3px;
   font-weight: 400;
   font-size: 16px;
 }
@@ -360,7 +386,7 @@ body {
 	justify-content: center;
 }
 .logo_button_home {
-	width: 85%;
+	width: 83%;
   fill: #ffffff;
 }
 .title_footer {
@@ -370,7 +396,7 @@ body {
   box-sizing: border-box;
   text-transform: uppercase;
 	text-align: center;
-  margin-top: 60px;
+  margin-top: 47px;
   font-weight: 700;
   font-size: 32px;
   color: #ffffff;
@@ -385,7 +411,7 @@ body {
 }
 .logo_footer {
 	padding-top: 0;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 
@@ -400,22 +426,26 @@ body {
 		width: 205px;
 	}
 	.title_header {
-		margin-top: 181px;
+		margin-top: 155px;
 	}
 	.title_text {
 		display: block;
-		margin-left: 90px;
-		margin-right: 85px;
+		margin-left: 88px;
+		margin-right: 83px;
 		font-size: 64px;
 	}
 	.title_text_2 {
+		margin: 0;
+		line-height: 70px;
 		margin-left: 195px;
 	}
 	.buttons {
 		display: flex;
 		justify-content: center;
-		padding-top: 312px;
-		padding-bottom: 91px;
+		padding-bottom: 89px;
+	}
+	.buttons_header {
+		padding-top: 310px;
 	}
 	.link_buttons {
 		width: 312px;
@@ -423,7 +453,7 @@ body {
 		border-radius: 40px;
 	}
 	.link_download_app_store {
-		margin-right: 16px;
+		margin-right: 10px;
 	}
 	.link_download_google_play {
 		margin-top: 0;
@@ -455,7 +485,7 @@ body {
 		font-size: 32px;
 	}
 	.article_description {
-		padding: 32px 0;
+		padding: 20px 0 40px;
 		font-size: 16px;
 	}
 	
@@ -464,30 +494,39 @@ body {
 /* Картинка section ATHLETS */	
 	.section_image_athlets {
 		position: absolute;
-		top: 14%;
+		top: 12.3%;
 		left: 11.3%;
 		transform: translateX(-50%);
 	}
 	.title_athlets {
-		margin-left: 300px;
-		padding: 86px 0 0 0;
+		margin-left: 293px;
+		padding: 58px 0 0 0;
 		font-size: 80px;
 	}
 	.article_connection_athlets {
-		padding-top: 42px;
-		padding-left: 300px;
-		padding-right: 20px;
+		padding: 28px 30px 0 292px;
 	}
+	.article_description_connection {
+		padding-right: 40px;
+	}
+	
 	.article_collaboration_athlets {
-		padding-top: 42px;
-		padding-left: 300px;
-		padding-right: 20px;
+		padding: 35px 20px 0px 291px;
 	}
+	.article_description_collaboration_athlets {
+		padding: 15px 20px 35px 0;
+		line-height: 27px;
+	}
+	
 	.article_growth_athlets {
-		padding-top: 42px;
-		padding-left: 300px;
+		padding-top: 31px;
+		padding-left: 291px;
 		padding-right: 20px;
 	}
+	.article_description_growth {
+		padding-bottom: 35px;
+	}
+	
 	
 		/* Индивидуальные стили оформления секции PLAYERS */
 /* Картинка section PLAYERS */
@@ -495,25 +534,34 @@ body {
 	.section_image_item_players, .section_image_players {
 		position: absolute;
 		transform: translateX(0);
-		top: 10%;
+		top: 5.2%;
 		right: 0;
 	}
 	.title_players {
-		padding: 86px 32px 0;
+		padding: 58px 28px 0;
 		font-size: 80px;
 	}
 	.article_connection_players {
-		padding-top: 44px;
+		padding-top: 29px;
 		padding-left: 32px;
 		padding-right: 370px;
+	}
+	.article_description_connection_players {
+		padding-top: 16px;
+		line-height: 26px;
 	}
 	.article_collaboration_players {
-		padding-top: 44px;
+		padding-top: 30px;
 		padding-left: 32px;
 		padding-right: 370px;
 	}
+	.article_description_collaboration_players {
+		line-height: 26px;
+		padding-bottom: 34px;
+	}
+	
 	.article_growth_players {
-		padding-top: 44px;
+		padding-top: 33px;
 		padding-left: 32px;
 		padding-right: 370px;
 	}
@@ -521,22 +569,21 @@ body {
 	/* Start Aside_section */
 
 	.section_aside_post {
-		padding: 91px 32px 96px;
+		padding: 59px 30px 92px 26px;
 	}
 	.number_post {
 		width: 116px;
 		height: 116px;
 		font-size: 24px;
-		left: 32px;
-		top: -90px;
+		left: 33px;
+		top: -85px;
 	}
 	.number_post::after {
 		width: 25px;
 		height: 5px;
 		background-color: #8f7bc8;
 		border-radius: 5px;
-		margin-top: 5px;
-
+		margin-top: 3px;
 	}
 	.section_title_article {
 		margin-left: 0;
@@ -544,9 +591,36 @@ body {
 	}
 	.section_article_description {
 		margin: 0;
-		padding-top: 38px;
+		padding-top: 7px;
+		padding-left: 5px;
 		font-size: 24px;
 	}
+/*	FIND CONTACT */
+	.section_aside_post_contact {
+		padding: 48px 30px 99px 26px; 
+	}
+	.number_post_contact {
+		left: 33px;
+		top: -95px;
+	}
+/*	WORK IT */
+	.section_aside_post_work {
+		padding: 48px 30px 141px 26px; 
+	}
+	.number_post_work {
+		left: 33px;
+		top: -95px;
+	}
+	.section_aside_post_work {
+		padding-left: 34px;
+		padding-top: 49px;
+	}
+	.section_article_description_work {
+		padding-left: 0;
+		padding-top: 9px;
+		line-height: 28px;
+	}
+	
 /* The End of Aside_section */
 	
 	/* FOOTER */
@@ -573,19 +647,25 @@ body {
 
 	.title_footer {
 		width: 100%;
-		margin-top: 83px;
+		margin-top: 62px;
 		font-size: 80px;
+		letter-spacing: 4.7px;
 	}
 
 	.title_footer_text {
-		font-size: 30px;
+		font-size: 36px;
+		letter-spacing: normal;
+	}
+	
+	.buttons_footer {
+		padding-top: 270px;
+		padding-bottom: 56px;
 	}
 
 	.logo_footer {
 		padding-top: 0;
-		padding-bottom: 24px;
 	}
-	
+
 }
 
 @media (min-width: 961px) and (max-width: 1365px) {
@@ -855,28 +935,35 @@ body {
   .header {
 	  background-image: url(img/football_1920.jpg);
   }
+	.logo {
+		padding-top: 43px;
+		width: 193px;
+	}
   .title_header {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 295px;
+    margin-top: 259px;
   }
   .title_text {
-		margin-left: 193px;
+		margin-left: 187px;
 		font-size: 90px;
+		letter-spacing: 5px;
   }
 	.title_text_2 {
     margin: 0;
-		margin-left: 664px;
+		margin-left: 637px;
+		letter-spacing: 5px;
+		line-height: 65px;
 	}
   .buttons {
 		display: flex;
 		justify-content: center;
-		padding-top: 222px;
-		padding-bottom: 110px;
+		padding-top: 225px;
+		padding-bottom: 113px;
 	}
 	.link_buttons {
-		width: 312px;
+		width: 315px;
 		height: 77px;
 		border-radius: 40px;
 	}
@@ -895,10 +982,10 @@ body {
     background-color: #553b9d;
   }
 	.download_icon {
-		width: 37px;
+		width: 45px;
 	}
 	.download_link_label {
-		margin-left: 27px;
+		margin-left: 30px;
 		font-size: 14px;
 	}
 	
@@ -928,10 +1015,12 @@ body {
 	}
 	.title_article {
 		font-size: 36px;
+		letter-spacing: 2px;
 	}
 	.article_description {
-		padding: 32px 0 51px;
+		padding: 16px 0 55px;
 		font-size: 20px;
+		letter-spacing: 1px;
 	}
 	
 	
@@ -939,65 +1028,72 @@ body {
 /* Картинка section ATHLETS */	
 .section_image_athlets {
 	position: absolute;
-  top: 5%;
-  left: 30%;
+  top: 2.9%;
+  left: 35.1%;
   transform: translateX(-50%);
 }
 	.title_athlets {
-		margin-left: 54%;
-		padding: 117px 0 0 0;
+		margin-left: 52.5%;
+		padding: 89px 0 0 0;
 		font-size: 80px;
+		letter-spacing: 1px;
 	}
 	.article_connection_athlets {
-		padding-top: 62px;
-		padding-left: 54%;
+		padding-top: 70px;
+		padding-left: 52.5%;
 		padding-right: 33px;
 	}
 	.article_collaboration_athlets {
-		padding-top: 62px;
-		padding-left: 54%;
-		padding-right: 33px;
+		padding-top: 50px;
+		padding-left: 52.5%;
+		padding-right: 140px;
 	}
 	.article_growth_athlets {
-		padding-top: 62px;
-		padding-left: 54%;
-		padding-right: 33px;
+		padding-top: 48px;
+		padding-left: 52.5%;
+		padding-right: 175px;
 	}
 	
-		
 		/* Индивидуальные стили оформления секции PLAYERS */
 /* Картинка section PLAYERS */
 	
 	.section_image_item_players, .section_image_players {
 		position: absolute;
 		transform: translateX(0);
-		top: 0;
-		right: 5%;
+		top: 2.7%;
+		right: 4.5%;
 	}
 	.title_players {
-		padding: 86px 32px 0;
+		padding: 90px 185px 0;
 		font-size: 80px;
 	}
 	.article_connection_players {
-		padding-top: 62px;
-		padding-left: 32px;
-		margin-right: 50%;
-	}
-	.article_collaboration_players {
-		padding-top: 62px;
-		padding-left: 32px;
-		padding-right: 370px;
-	}
-	.article_growth_players {
-		padding-top: 62px;
-		padding-left: 32px;
-		padding-right: 370px;
+		padding-top: 80px;
+		padding-left: 190px;
+		padding-right: 50%;
 	}
 	.article_description_connection_players {
 		display: block;
 		width: 100%;
+		padding-top: 14px;
 	}
 	
+	.article_collaboration_players {
+		padding-top: 48px;
+		padding-left: 195px;
+		padding-right: 370px;
+	}
+	.article_description_collaboration_players {
+		padding-top: 20px;
+		padding-bottom: 87px;
+	}
+	
+	.article_growth_players {
+		padding-top: 48px;
+		padding-left: 190px;
+		padding-right: 370px;
+		letter-spacing: normal;
+	}
 	
 /* ASIDE */
 	/* Start Aside_section */
@@ -1010,7 +1106,7 @@ body {
 	}
 	.aside_image {
 		width: 50%;
-		box-sizing: border-box;
+		box-sizing: border-box; 
 	}
 	.section_contact {
 		display: flex;
@@ -1037,7 +1133,7 @@ body {
 		position: absolute;
 		transform: translateX(-50%);
 		left: 0;
-		top: 30%;
+		top: 31.7%;
 	}
 	.number_post_contact {
 		display: flex;
@@ -1055,7 +1151,6 @@ body {
 		left: 100%;
 		top: 30%;
 	}
-	
 	.number_post::after {
 		content: "";
 		width: 24px;
@@ -1065,6 +1160,7 @@ body {
 		margin-top: 5px;
 		color: inherit;
 	}
+	
 	.section_title_article {
 		margin: 0;
 		text-transform: uppercase;
@@ -1076,25 +1172,33 @@ body {
 		padding-right: 80px;
 	}
 	
-	.section_aside_post_contact {
-		padding-left: 187px;
-	}
-	
-	.section_article_description_contact {
-		padding-right: 170px;
-	}
-	
 	.section_article_description {
 		margin: 0;
 		padding-top: 24px;
 		font-weight: 400;
 		font-size: 24px;
 	}
+	
+	.section_aside_post_contact {
+		padding-left: 187px;
+	}
+	.section_article_description_contact {
+		padding-right: 170px;
+		padding-top: 45px;
+	}
+	
+	.section_article_description_work {
+		padding-top: 75px;
+		padding-right: 150px;
+		letter-spacing: 1.2px;
+		
+	}
+
 
 	/* FOOTER */
 
 	.footer_conteiner {
-		padding-top: 229px;
+		padding-top: 223px;
 	}
 	
 	.link_home {
@@ -1102,8 +1206,7 @@ body {
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;		
-	}
-		
+	}	
 	.link_home_page {
 		width: 130px;
 		height: 130px;
@@ -1114,22 +1217,32 @@ body {
 		flex: none;
 		
 	}
+	
 	.title_footer {
 		width: auto;
 		margin-top: 0;
-		margin-left: 50px;
+		margin-left: 39px;
 		font-size: 80px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
+		letter-spacing: 5px;
 	}
-
 	.title_footer_text {
+		line-height: 15px;
 		margin-right: auto;
 		font-size: 30px;
+		letter-spacing: 0.5px;
 	}
-
+	
+	.buttons_footer {
+		padding-top: 162px;
+		padding-bottom: 265px;
+	}
+	.link_buttons {
+		width: 315px;
+	}
 	.logo_footer {
 		padding-top: 0;
 		padding-bottom: 52px;
